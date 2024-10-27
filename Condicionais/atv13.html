@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let letra = 'c';
+
+        function verificarVogalConsoante(l) {
+            let vogais = ['a', 'e', 'i', 'o', 'u'];
+
+            let result = '';
+            if (vogais.includes(l)) {
+                result = 'vogal';
+            } else {
+                result = 'consoante';
+            };
+
+            console.log(`${l} = ${result}`)
+        };
+
+        verificarVogalConsoante(letra);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       let num = 7;
+
+       function verificarMultiplo3e5(n) {
+            let result = '';
+
+            if (num % 3 === 0 && num % 5 === 0) {
+                result = '3 e 5';
+            } else if (num % 3 === 0) {
+                result = '3';
+            } else if (num % 5 === 0) {
+                result = '5';
+            }
+
+            if (result) {
+                console.log(`${n} é múltiplo de ${result}`);
+            } else {
+                console.log(`${n} não é múltiplo de 3 nem de 5`);
+            }
+       };
+
+       verificarMultiplo3e5(num);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       let nota = 8;
+
+       function verificarGrade(n) {
+            let classe = '';
+            
+            if (n >= 0 && n <= 10) {
+                if (n >= 9) {
+                    classe = 'A';
+                } else if (n < 9 && n >= 7){
+                    classe = 'B';
+                } else if (n < 7 && n >= 5) {
+                    classe = 'C';
+                } else if (n < 5 && n >= 4) {
+                    classe = 'D';
+                } else {
+                    classe = 'E';
+                };
+
+                console.log(`${n} = ${classe}`);
+            } else {
+                console.log('Nota inválida');
+            };
+       };
+
+       verificarGrade(nota);
+
+    </script>
+</body>
+</html>

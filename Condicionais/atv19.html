@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let senha = 'senha123';
+
+        function verificarSenha(password) {
+            let lista = password.split('');
+
+            if (lista.length < 8) {
+                console.log(`Segurança em risco! A senha possui apeas ${lista.length} caracteres`);
+            } else {
+                console.log('Ótimo! Sua senha contém mais de 8 caractéres');
+            };
+        };
+
+        verificarSenha(senha);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       let ano = 1904;
+
+       function anoBissexto(n) {
+            let result = '';    
+            if (n % 400 === 0) {
+                result = 'bissexto';
+            } else if (n % 100 === 0) {
+                result = 'não bissexto';
+            } else if (n % 4 === 0 && n % 100 !== 0) {
+                result = 'bissexto';
+            } else {
+                result = 'não bissexto';
+            };
+
+            console.log(`${ano} é ${result}`);
+       };
+
+       anoBissexto(ano);
+    </script>
+</body>
+</html>
