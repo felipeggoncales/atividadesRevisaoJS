@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let lista = [10, 12, 17, 42, 35, 28];
+
+        function encontrarSegundoMaior(array) {
+            let maiorValor = -Infinity;
+            let segundoMaiorValor = -Infinity;
+
+            for (item of array) {
+                if (item > maiorValor) {
+                    segundoMaiorValor = maiorValor;
+                    maiorValor = item;
+                } else if (item > segundoMaiorValor && item < maiorValor) {
+                        segundoMaiorValor = item;
+                };
+            };
+
+            console.log(`O segundo maior valor da lista é: ${segundoMaiorValor}`);
+        };
+
+        encontrarSegundoMaior(lista);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let lista1 = [1,2,3];
+        let lista2 = ['a', 'b', 'c'];
+
+        function unirArrays(a1, a2) {
+            let lista3 = [];
+            for (item of a1) {
+                lista3.push(item);
+            };
+            for (item2 of a2) {
+                lista3.push(item2);
+            };
+
+            console.log(lista3);
+        };
+
+        unirArrays(lista1, lista2);
+
+    </script>
+</body>
+</html>

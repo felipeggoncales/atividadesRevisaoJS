@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let lista = [1,2,2,4,3,5,4];
+
+        function removerDuplicados(array) {
+            for (item of array) {
+                let contagem = 0;
+                for (indice in array) {
+                    if (item === array[indice]) {
+                        contagem++;
+                        if (contagem > 1) {
+                            array.splice(indice, 1);
+                        };
+                    };
+                };
+            };
+
+            console.log(array);
+        };
+
+        removerDuplicados(lista);
+
+    </script>
+</body>
+</html>

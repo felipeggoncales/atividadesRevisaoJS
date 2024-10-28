@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let lista = [1,2,3,4,5,6,7];
+
+        function contarImpares(array) {
+            let contagem = 0;
+
+            for (item of array) {
+                if (item % 2 !== 0) {
+                    contagem++;
+                };
+            };
+
+            console.log(`Quantidade de números ímpares na lista: ${contagem}`);
+        };
+
+        contarImpares(lista);
+
+    </script>
+</body>
+</html>
