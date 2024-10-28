@@ -8,8 +8,15 @@
 <body>
     <script>
 
-       const nome = 'Felipe'
-       console.log(nome)
+        let pares = [];
+
+        for (i = 0; i < 50; i++) {
+            if ((i+1) % 2 === 0) {
+                pares.push(i+1);
+            };
+        };
+
+        console.log(`Números pares de 1 a 50: \n${pares}`)
 
     </script>
 </body>

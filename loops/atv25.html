@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let qntNum = 10;
+        let a = 0;
+        let b = 0;
+        let c = 0;
+
+        let lista = [];
+
+        for (i = 0; i < qntNum - 1; i++) {
+            if (b < 1) {
+                b++;
+                lista.push(b);
+            };
+            c = b + a;
+            a = b;
+            b = c;
+            lista.push(c);    
+        };
+
+        console.log(lista);
+
+    </script>
+</body>
+</html>

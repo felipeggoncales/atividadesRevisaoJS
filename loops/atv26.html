@@ -8,8 +8,15 @@
 <body>
     <script>
 
-       const nome = 'Felipe'
-       console.log(nome)
+        let string = 'subi no onibus';
+
+        let lista = [];
+
+        for (i = string.length - 1; i >= 0; i--) {
+            lista.push(string[i]);
+        };
+
+        console.log(`${string} = ${lista.join('')}`);
 
     </script>
 </body>
