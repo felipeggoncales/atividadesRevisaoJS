@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let contatos = {
+            pessoa1: {
+                nome: 'André',
+                idade: 47
+            },
+            pessoa2: {
+                nome: "Vitor",
+                idade: 25
+            },
+            pessoa3: {
+                nome: 'Jussara',
+                idade: 73
+            }
+        };
+
+        function mediaIdade(conjunto) {
+            let soma = 0;
+            let qnt = 0;
+            for (let item in conjunto) {
+                soma += conjunto[item].idade;
+                qnt++;
+            };
+
+            let media = (soma / qnt).toFixed(2);
+
+            console.log(`Média das idades: ${media} anos`);
+        };
+
+        mediaIdade(contatos);
+
+    </script>
+</body>
+</html>

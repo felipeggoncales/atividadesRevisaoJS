@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let pessoa = {
+            nome: 'Felipe',
+            idade: 17,
+            cidade: 'Birigui'
+        };
+
+        function verificarPropriedadeObjeto(obj, prop) {
+            if (prop in obj) {
+                console.log(`A propriedade "${prop}" está presente no objeto`);
+            } else {
+                console.log(`A propriedade "${prop}" NÃO está presente no objeto`);
+            };
+        };
+
+        verificarPropriedadeObjeto(pessoa, 'nome'); // Retorna true
+        verificarPropriedadeObjeto(pessoa, 'telefone'); // Retorna false
+        
+    </script>
+</body>
+</html>

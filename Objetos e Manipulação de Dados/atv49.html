@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let pessoa = {
+            nome: 'Felipe',
+            idade: 17,
+            cidade: 'Birigui'
+        };
+
+        function podeDirigir(person) {
+            if (person.idade >= 18) {
+                console.log(`Eba! ${person.nome} pode dirigir!`)
+            } else {
+                console.log(`Vish... ${person.nome} NÃO pode dirigir!`)
+            };
+        };
+
+        podeDirigir(pessoa);
+
+    </script>
+</body>
+</html>
